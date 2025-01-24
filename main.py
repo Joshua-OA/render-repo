@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 import uvicorn
 
+
 app = FastAPI()
 
 # Sample data model for demonstration
@@ -28,5 +29,5 @@ def create_item(item: Item):
 
 
 if __name__ == "__main__":
-    port = int("PORT", 8000)
+    port = int(8000)
     uvicorn.run(app, host="0.0.0.0", port=port)
