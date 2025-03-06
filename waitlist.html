@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Waitlist Confirmation</title>
+    <style type="text/css">
+        body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+        table,
+        img { -ms-interpolation-mode: bicubic; }
+
+        img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
+        table { border-collapse: collapse !important; }
+        body { height: 100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important; }
+
+        a[x-apple-data-detectors] {
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+        
+        .button {
+            background-color: #ff5722;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 50px;
+            font-weight: bold;
+        }
+        
+        .highlight {
+            color: #ff5722;
+            font-weight: bold;
+        }
+        
+        /* Mobile responsiveness */
+        @media screen and (max-width: 600px) {
+            .email-container {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+            .content-padding {
+                padding-left: 15px !important;
+                padding-right: 15px !important;
+            }
+            .mobile-font-smaller {
+                font-size: 15px !important;
+            }
+            .mobile-heading {
+                font-size: 24px !important;
+            }
+            .mobile-subheading {
+                font-size: 16px !important;
+            }
+        }
+    </style>
+</head>
+<body style="margin: 0; padding: 0;">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="font-family: Arial, sans-serif; max-width: 650px; margin: 0 auto;" class="email-container">
+        
+        <tr>
+            <td style="background-color: #ffffff; text-align: center; ">
+                <!-- Hero section -->
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" >
+                    <tr>
+                        <td style="padding: 35px 25px 15px; text-align: center;" class="content-padding">
+                            <h1 style="color: #01295f; margin: 0; font-size: 26px; font-weight: bold;" class="mobile-heading">You're In! 🎉</h1>
+                            <p style="color: #666; font-size: 17px; line-height: 1.6; margin: 20px 0;" class="mobile-subheading">
+                                Welcome to the <span class="highlight">Dojikets</span> waitlist!
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: #ffffff;">
+                <!-- Content section -->
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td style="padding: 0 25px 25px;" class="content-padding">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #f9f9f9; border-radius: 10px; overflow: hidden;">
+                                <tr>
+                                    <td style="padding: 25px; text-align: left;">
+                                        <p style="color: #333; line-height: 1.6; margin: 0 0 20px; font-size: 15px;" class="mobile-font-smaller">
+                                            Hi {{ subscriber.first_name }},
+                                        </p>
+                                        <p style="color: #333; line-height: 1.6; margin: 0 0 20px; font-size: 15px;" class="mobile-font-smaller">
+                                            We're thrilled to have you join our exclusive waitlist! You're now part of a select group who will be the first to experience Dojikets when we launch.
+                                        </p>
+                                        <p style="color: #333; line-height: 1.6; margin: 0 0 20px; font-size: 15px;" class="mobile-font-smaller">
+                                            <strong>As a thank you for your early interest:</strong>
+                                        </p>
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #fff; border-radius: 8px; border-left: 4px solid #ff5722; margin: 20px 0; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+                                            <tr>
+                                                <td style="padding: 20px;">
+                                                    <p style="color: #333; line-height: 1.6; margin: 0; font-size: 15px;" class="mobile-font-smaller">
+                                                        <span style="font-size: 22px; color: #ff5722; font-weight: bold;">10 FREE TOKENS</span><br>
+                                                        Ready to use on any premium feature when we launch!
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <p style="color: #333; line-height: 1.6; margin: 25px 0 20px; font-size: 15px;" class="mobile-font-smaller">
+                                            We'll keep you updated on our progress and let you know when you can start using Dojikets.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        
+        <tr>
+            <td style=" color: #01295f; padding: 0px 25px; text-align: center;" class="content-padding">
+                <table >
+                    <tr style="width: 100%; margin: 0 auto;">
+                            <div style="width: 100px; height: 100px; margin: 0 auto;">
+                                <!-- Use the hosted image -->
+                                <img src="{{ server_url }}/static/images/dojikets.png" alt="Dojikets Logo" width="180" style="max-width: 100%;" />
+                            </div>
+                        
+                        
+                            <p style="margin-top: -20px; font-size: 13px;">
+                                © 2025 Dojikets. All rights reserved.
+                            </p>
+                        
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
